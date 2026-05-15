@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-coffee-void: #0a0604;
+  --color-coffee-espresso: #1a0e07;
+  --color-coffee-roast: #2e1a10;
+  --color-coffee-mocha: #4a2d1a;
+  --color-coffee-bark: #6b4a2e;
+  --color-coffee-crema: #f4ead8;
+  --color-coffee-sand: #e8dbc4;
+  --color-coffee-paper: #faf5ec;
+  --color-accent-caramel: #c08951;
+  --color-accent-copper: #b08660;
+  --color-ink-dark: #1a0e07;
+  --color-ink-muted: #8a7868;
+
+  --font-display: var(--font-display);
+  --font-serif: var(--font-display);
+  --font-script: var(--font-script);
+  --font-sans: var(--font-sans);
+  --font-arabic: var(--font-arabic);
+  --font-arabic-display: var(--font-arabic-display);
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  --animate-fade-in: fade-in 0.6s ease-out both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  color-scheme: light;
+  --page-bg: var(--color-coffee-paper);
+  --page-fg: var(--color-ink-dark);
+}
+
+html,
+body {
+  background: var(--page-bg);
+  color: var(--page-fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "kern";
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font-sans), "Inter", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+[lang="ar"] body {
+  font-family: var(--font-arabic), "Tajawal", "Noto Sans Arabic", system-ui,
+    sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), "Cormorant Garamond", "Times New Roman",
+    serif;
+  font-feature-settings: "ss01", "liga";
+}
+
+[lang="ar"] .font-display {
+  font-family: var(--font-arabic-display), "Amiri", "Cormorant Garamond", serif;
+}
+
+.font-script {
+  font-family: var(--font-script), "Italianno", "Snell Roundhand", cursive;
+}
+
+[lang="ar"] .font-script {
+  font-family: var(--font-arabic-display), "Amiri", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.font-mono-tab {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.tracking-display {
+  letter-spacing: 0.16em;
+}
+
+.tracking-cinematic {
+  letter-spacing: 0.04em;
+}
+
+[lang="ar"] .tracking-display,
+[lang="ar"] .tracking-cinematic {
+  letter-spacing: 0;
+}
+
+/* Lenis recommended styling */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(74, 45, 26, 0.18);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(74, 45, 26, 0.32);
+}
+
+/* Reduced motion: kill scroll-driven animations gracefully */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Octagonal chapter pip (like the Cartier counter ring) */
+.chapter-pip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+.chapter-pip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  opacity: 0.6;
+  clip-path: polygon(
+    18% 0%,
+    82% 0%,
+    100% 18%,
+    100% 82%,
+    82% 100%,
+    18% 100%,
+    0% 82%,
+    0% 18%
+  );
+}

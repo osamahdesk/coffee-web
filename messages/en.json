@@ -1,0 +1,96 @@
+{
+  "brand": {
+    "wordmark": "mqyas",
+    "tagline": "Precision in every cup."
+  },
+  "nav": {
+    "locale": "AR",
+    "sound": "SOUND",
+    "muted": "MUTED",
+    "shop": "SHOP",
+    "stores": "STORES",
+    "contact": "CONTACT",
+    "secondary": {
+      "origins": "ORIGINS",
+      "roastery": "ROASTERY",
+      "tools": "BREWING TOOLS",
+      "subscription": "SUBSCRIPTION",
+      "journal": "JOURNAL",
+      "wholesale": "WHOLESALE"
+    },
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "title": "PRECISION IN EVERY CUP",
+    "subtitle": "From a single bean, measured.",
+    "scroll": "Scroll to discover",
+    "chapter": "Chapter"
+  },
+  "scenes": {
+    "origins": {
+      "eyebrow": "Chapter I — Origins",
+      "title": "WHERE THE BEAN BEGINS",
+      "body": "Each season we travel to single farms across Ethiopia, Yemen, Rwanda, and Colombia to select the lots that will define the next harvest."
+    },
+    "roast": {
+      "eyebrow": "Chapter II — The Roast",
+      "title": "CALIBRATED BY THE DEGREE",
+      "body": "Every profile is measured to a fraction of a degree. Slow, patient, and tuned to the character of each origin."
+    },
+    "cup": {
+      "eyebrow": "Chapter III — The Cup",
+      "title": "A QUIET, EXACT PLEASURE",
+      "body": "The cup is the final measurement. Clarity, sweetness, and a long, calm finish."
+    }
+  },
+  "cta": {
+    "shop": "Discover our crops",
+    "subscribe": "Join the subscription",
+    "visit": "Visit the roastery"
+  },
+  "footer": {
+    "house": "The House",
+    "links": {
+      "about": "About the roastery",
+      "method": "Our method",
+      "press": "Press",
+      "careers": "Careers"
+    },
+    "client": "Client services",
+    "clientLinks": {
+      "contact": "Contact us",
+      "shipping": "Shipping & returns",
+      "faq": "FAQ",
+      "terms": "Terms of sale"
+    },
+    "discover": "Discover",
+    "discoverLinks": {
+      "stores": "Stores",
+      "journal": "Journal",
+      "events": "Events",
+      "newsletter": "Newsletter"
+    },
+    "newsletter": {
+      "title": "Stay close to the harvest",
+      "body": "Letters from the roastery, sent only when the season turns.",
+      "placeholder": "Your email address",
+      "submit": "Subscribe"
+    },
+    "legal": "© {year} mqyas roaster. All rights reserved.",
+    "legalLinks": {
+      "privacy": "Privacy",
+      "cookies": "Cookies",
+      "legal": "Legal notice"
+    }
+  },
+  "preloader": {
+    "title": "mqyas",
+    "loading": "Loading",
+    "enter": "Enter"
+  },
+  "reducedMotion": {
+    "notice": "Reduced motion is enabled — showing a still composition."
+  }
+}
